@@ -6,5 +6,5 @@ tags: []
 
 # CodeWars Kata Solutions.
 
-Inline-style: 
+
 ![alt text](https://www.codewars.com/users/echokid/badges/large "Logo Title Text 1")
