@@ -1,0 +1,6 @@
+//remove all vowels from a given string. 
+
+function disemvowel(str) {
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    return str.split('').filter(letter => !vowels.includes(letter.toLowerCase())).join('');
+}
