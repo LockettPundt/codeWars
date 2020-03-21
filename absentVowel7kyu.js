@@ -1,5 +1,5 @@
-function absentVowel(x){
-  
+function absentVowel(x) {
+
     let strArr = x.match(/[aeiou]/gi);
     if (!strArr.includes("a")) {
         return 0;
@@ -16,5 +16,5 @@ function absentVowel(x){
     if (!strArr.includes("u")) {
         return 4;
     }
-    
-  }
+
+}

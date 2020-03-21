@@ -6,5 +6,5 @@ function getMiddle(s) {
     if ((x % 2) == 0) {
         return s[(x / 2) - 1] + s[x / 2];
     }
-  }
-  console.log(getMiddle("kjahslkdjasLDHJ"));
+}
+console.log(getMiddle("kjahslkdjasLDHJ"));

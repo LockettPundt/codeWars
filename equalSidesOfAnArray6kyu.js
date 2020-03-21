@@ -3,6 +3,6 @@
 
 
 function findEvenIndex(arr) {
-    const result = arr.map((a, b) => arr.slice(0, b + 1).reduce((a, b) => a + b, 0) === arr.slice(b).reduce((a, b) => a + b, 0));
-    return result.includes(true) ? result.indexOf(true) : -1;
-  }
+  const result = arr.map((a, b) => arr.slice(0, b + 1).reduce((a, b) => a + b, 0) === arr.slice(b).reduce((a, b) => a + b, 0));
+  return result.includes(true) ? result.indexOf(true) : -1;
+}

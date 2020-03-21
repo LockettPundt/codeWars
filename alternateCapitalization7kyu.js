@@ -1,14 +1,15 @@
-//a given string returns 2 versions, one with all even indexes capitalized and the other with
-//all odd indexes capitalized.
+// a given string returns 2 versions, one with all even indexes capitalized and the other with
+// all odd indexes capitalized.
+
 
 function capitalize(s) {
   const even = s
-    .split("")
+    .split('')
     .map((letter, index) => (index % 2 === 0 ? letter.toUpperCase() : letter))
-    .join("");
+    .join('');
   const odd = s
-    .split("")
+    .split('')
     .map((letter, index) => (index % 2 !== 0 ? letter.toUpperCase() : letter))
-    .join("");
+    .join('');
   return [even, odd];
 }
