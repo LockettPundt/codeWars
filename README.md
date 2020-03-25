@@ -7,4 +7,4 @@ tags: []
 # CodeWars Kata Solutions.
 
 
-![alt text](https://www.codewars.com/users/echokid/badges/large "Logo Title Text 1")
+![alt text](https://www.codewars.com/users/Lockett%20Pundt/badges/large "Logo Title Text 1")
