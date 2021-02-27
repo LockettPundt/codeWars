@@ -9,11 +9,12 @@
 // If the input or the result is an empty string it must return false.
 
 
-function generateHashtag(str) {
-  const strTest = str.split(' ').filter((item) => /[a-z]/gi.test(item)).join(' ');
-  if (!strTest.length || strTest.length >= 140) return false;
-  const splitStr = str.split(' ').filter((item) => item !== ' ');
-  return splitStr.map((word, index) => (index === 0
-    ? `#${word.slice(0, 1).toUpperCase()}${word.slice(1)}`
-    : `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`)).join('');
+function generateHashtag (str) {
+  const words = str.split(' ').filter(x => !!x)
+  if (!words.length) return false
+  const result = words.reduce((str, x) => {
+    str += x[0].toUpperCase() + x.slice(1)
+    return str
+  }, '#')
+  return result.length <= 140 && result
 }
