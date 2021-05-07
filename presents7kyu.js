@@ -10,5 +10,5 @@ function presents(a) {
   return a.reduce((arr, x, i) => {
     arr[x - 1] = i + 1;
     return arr;
-  }, Array.from({ length: a.legnth - 1 }));
+  }, []);
 }
