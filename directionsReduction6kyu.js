@@ -10,15 +10,13 @@ function dirReduc(arr) {
     WEST: 'EAST',
   };
 
-  for (let i = 0; i < directions.length; i++) {
+  for (let i = 0; i < directions.length; ) {
     if (directions[i] === opposites[directions[i + 1]]) {
       directions = [...directions.slice(0, i), ...directions.slice(i + 2)];
+      i = 0;
+      continue;
     }
+    i++;
   }
-
-  if (arr.length !== directions.length) {
-    return dirReduc(directions);
-  }
-
   return directions;
 }
